@@ -39,7 +39,7 @@ You can download the pre-trained language model from the table below:
 |   |Head=12|
 |---:|---:|
 | **Layer=12** |[baidu_ultr_paddle_12l_12h_768e](https://drive.google.com/file/d/1dSSA3RotV4CNG5WMdAQ4ZulipjXSPwD1/view?usp=sharing)|
-| **Layer=6** |[baidu_ultr_paddle_6l_12h_768e](https://drive.google.com/file/d/1tcQ-_VkKbV4ESE2Wu9FgAx9wVvO6Fc7w/view?usp=sharing)|
+| **Layer=6** |[baidu_ultr_paddle_6l_12h_768e](https://drive.google.com/file/d/1EiBdWg6V_nOoX2CJMw2nD8_2_N1H2lDa/view?usp=share_link)|
 | **Layer=3** |[baidu_ultr_paddle_3l_12h_768e](https://drive.google.com/file/d/1tcQ-_VkKbV4ESE2Wu9FgAx9wVvO6Fc7w/view?usp=sharing)|
 
 ### Train Data --- Large Scale Web Search Session Data
@@ -98,7 +98,7 @@ The expert annotation dataset is aviable at [here](https://drive.google.com/driv
 The Schema of the [annotation_data_0522.txt](https://drive.google.com/file/d/1hdWRRSMrCnQxilYfjTx8RhW3XTgiSd9Q/view?usp=sharing):
 |Columns|Explaination|Remark|
 |:---|:---|:---|
-|Qid|The uniq id for every query.| An uniq id.|
+|Qid|The uniq id for every query.| An uniq id. **There are some queries (8% queries) with the same qids, which might slightly influence the evaluating score. Please directly using the query as the indicator!**|
 |Query|The user issued query|Sequential token ids separated by "\x01".|
 |Title|The title of document.|Sequential token ids separated by "\x01".|
 |Abstract|A query-related brief introduction of the document under the title.|Sequential token ids separated by "\x01".|
